@@ -1,0 +1,83 @@
+.process-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Make the container take up the full viewport height */
+    margin-bottom: 130px;
+
+  }
+  
+  .process-image {
+    flex: 1;
+    max-height: 50%; /* Image takes up 1/3 of the height */
+  }
+  .processh4{
+    display: flex;
+    justify-content: center;
+    color: rgb(236, 34, 34);
+  }
+  .process-Heading{
+    display: flex;
+    justify-content: center;
+    color:#AF47D2;
+    /* margin-top: 40px; */
+  }
+  .processh2{
+    color: #AF47D2;
+    font-size: small;
+  }
+  .process-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .process-cards {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 80px;
+    /* overflow-y: auto;  */
+    /* Allows scrolling if content overflows */
+  }
+  
+  .process-card {
+    background: #CDF0EA;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: small;
+  }
+  .process-card:hover {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    border: 1px solid #AF47D2;
+    /* font-size: ; */
+  }
+  .process-card:hover h2 {
+   font-size: medium;
+  }
+  
+  .process-card h2 {
+    margin-top: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .process-container {
+      height: auto;
+    }
+  
+    .process-image {
+      max-height: 100%; /* Image takes up full height in smaller screens */
+    }
+  
+    .process-cards {
+      grid-template-columns: 1fr; /* Single column layout for smaller screens */
+      padding: 10px;
+    }
+    
+  }
+  

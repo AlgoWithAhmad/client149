@@ -1,0 +1,159 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.quote-section {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+  /* border: 1px solid black; */
+}
+
+.quote-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: cursive;
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.signs-section {
+  /* border: 2px dotted #AF47D2; */
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+  padding: 20px 60px;
+  /* width: 1000px; */
+  /* border-radius: 20px; */
+
+
+}
+
+.signs-section h3 {
+  font-size: larger;
+  margin-bottom: 40px;
+  color: #AF47D2;
+}
+
+.signs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.sign-card {
+  background: white;
+  padding: 20px;
+  /* width: min-content; */
+  border: 1px solid #AF47D2;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.sign-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-div {
+  border: 1px solid #AF47D2;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+}
+.sign-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.sign-title {
+  font-size: 1rem;
+  margin-left: 20px;
+  color: #AF47D2;
+
+}
+
+.sign-definition {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.cards-section {
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 40px);
+  min-width: 280px;
+  animation: fadeInUp 1s ease-in-out;
+  /* border:  ; */
+  border-left: 4px solid #AF47D2
+}
+.card2 {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 40px);
+  min-width: 280px;
+  animation: fadeInUp 1s ease-in-out;
+  border: 2px solid #AF47D2;
+  
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #AF47D2;
+}
+.card2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #AF47D2;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .signs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,130 @@
+.home-container {
+    text-align: center;
+    padding: 1  0px;
+
+
+    
+}
+
+
+.poster {
+    border: 1px solid #AF47D2;
+    display: flex;
+    max-height: 150px;
+    padding: 5px;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(175, 71, 210));
+    gap:100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.member-logo{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.poster-text {
+    color: #fff;
+    font-size: 2rem;
+    /* font-family: cursive; */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cursive', sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    /* height: 50vh; */
+}
+
+.quote {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.5rem;
+    /* background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    height: 100vh;
+    /* margin: 100vh;  */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}   
+
+.quote-para {
+    /* font-family: 'Fantasy';
+    font-size: '2.5rem';
+    flex: flex-wrap;
+    border: 1px solid black; */
+    font-size: 3rem;
+    /* font-family: fantasy; */
+    font-family: cursive;
+    /* width: 600px; */
+    color: #AF47D2;
+}
+
+.image {
+    flex: 1;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 70%;
+    height: auto;
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.appointment-button {
+    margin-top: 20px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: end; */
+    /* height: 50vh; */
+}
+
+.appointment-button button {
+    background-color: orange;
+    /* background-color: #AF47D2; */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.appointment-button button:hover {
+    background-color: white;
+    color: #AF47D2;
+    border: 1px solid #AF47D2;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .quote,
+    .image {
+        flex: 1 1 100%;
+    }
+}

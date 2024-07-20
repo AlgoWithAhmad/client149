@@ -1,0 +1,132 @@
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    /* height: 80vh; */
+    /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
+  }
+  
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+        /* border: 1px solid #AF47D2; */
+    background-color: #fff;
+    /* border-radius: 15px; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-me-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-me-name {
+    font-size: 3.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
+    background: linear-gradient(90deg, #AF47D2, #7b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .about-me-name::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 5px;
+    background-color: #AF47D2;
+    animation: expand 1s ease-in-out;
+  }
+  
+  .about-me-designation {
+    font-size: 1rem;
+    margin: 20px;
+    color: #555;
+
+  }
+  
+  .about-me-paragraphs p {
+    margin: 15px 0;
+    text-align: justify;
+    font-size: medium;
+  }
+  
+  .appointments-button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    /* border: 1px solid #AF47D2; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    align-self: center;
+  }
+  
+  .appointments-button:hover {
+    font-weight: bold;
+    /* color: #AF47D2; */
+  }
+  
+  .about-me-picture {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-me-picture img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes expand {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+  
+  @media (min-width: 768px) {
+    .about-me-content {
+      flex-direction: row;
+    }
+  
+    .about-me-info {
+      align-items: flex-start;
+    }
+  
+    .about-me-header {
+      text-align: left;
+    }
+  
+    .appointments-button {
+      align-self: flex-start;
+    }
+  }
+  
